@@ -35,7 +35,12 @@ h1{
 	color: #EDBC02;
 	cursor: pointer;
 }
+a,a:hover{
+	color: #000;
+	text-decoration: none;
+}
 /*signIn/signUp*/
+
 body.welcome{
 	background: #FFFCEA;
 }
@@ -73,16 +78,12 @@ body.welcome .log-input .log-next img{
 	width: 30px;
 	height: 30px;
 }
-
-
-/*ss*/
 .pass-input{
 	position: relative;
 	z-index: -1;
 	top: -44px;
 	border-radius: 6px;
 }
-/*ss*/
 .pass-input-anim{
 	animation-name: pass-input-anim;
 	animation-duration: 0.5s;
@@ -97,8 +98,6 @@ body.welcome .log-input .log-next img{
 		z-index: 1;		
 	}
 }
-
-
 .signup{
 	padding: 15px;
 	background: #fff;
@@ -120,4 +119,79 @@ body.welcome .log-input .log-next img{
 .signedup p{
 	max-width: 253px;
 	font-size: 16px;
+}
+
+/*header*/
+
+header{
+	background: #3E3E3E;
+	padding: 0 20px;
+	height: 40px;
+	padding-top: 5px;
+}
+header .header-logo img{
+	width: 30px;
+	height: 30px;
+}
+header .header-logo div{
+	color: #fff;
+	font-size: 16px;
+	margin-left: 10px;
+}
+header .header-search input{
+	height: 28px;
+	width: 200px;
+	transition: 0.5s;
+	margin-top: 1px;
+}
+header .header-search img{
+	right: 8px;
+	top: 6px;
+	cursor: pointer;    
+}
+header .header-menu img{
+	cursor: pointer;
+}
+header .header-menu img+img{
+	margin-left: 10px;
+}
+header .burger-menu{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background: #fff;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+header .burger-menu .b-logo{
+	margin: 30px auto;
+	max-width: 140px;
+}
+header .burger-menu .b-logo img{
+	width: 30px;
+	height: 30px;
+}
+
+header .burger-menu .b-search{
+	margin: 0 auto;
+	width: 290px;
+}
+header .burger-menu .b-search input{
+	width: 290px;
+}
+header .burger-menu .b-search img{
+	right: 13px;
+	top: 13px;
+}
+header .burger-menu .b-lang .active{
+	text-decoration-line: underline;
+	color: #EDBC02;
+}
+header .burger-menu .b-lang{
+	max-width: 100px;
+}
+header .burger-menu .b-qust,
+header .burger-menu .b-user{
+	text-align: center;
 }

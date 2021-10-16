@@ -12,8 +12,7 @@ if ($url == "/?signup") {
 	$showhide = "<script>$('.signup').hide();</script>";
 }
 ?>
-<body class="welcome">
-	<?php include('includes/header.php') ?>
+<body class="welcome">	
 	<div class="signin">
 		<div class="tac">
 			<img src="img/logo100.png" class="logo">

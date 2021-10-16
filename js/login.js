@@ -7,15 +7,6 @@ $('.signup').css({'top' : winH/2-signUH/2 - 50});
 $('.signup').css({'left' : winW/2-signUW/2-15});
 $('.signin').css({'marginTop' : winH/2-signIH/2 - 50});
 
-
-function en() {
-	$('.en').addClass("active");
-	$('.ru').removeClass("active");
-};
-function ru() {
-	$('.ru').addClass("active");
-	$('.en').removeClass("active");		
-};
 $('.log-input .log-next').bind("click", function() {
 	$('.log-input .log-next img').attr('src','img/load_note.gif');	
 	setTimeout(function(){

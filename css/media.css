@@ -1,0 +1,9 @@
+@media (max-width: 520px) {
+	header .header-menu,
+	header .header-search{
+	display: none;
+	}
+	header .burger-menu-btn{
+		display: block;
+	}
+}
