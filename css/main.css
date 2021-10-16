@@ -114,3 +114,10 @@ body.welcome .log-input .log-next img{
 	max-width: 290px;
 	margin: 0 auto;
 }
+.signedup{
+	padding: 100px 0;
+}
+.signedup p{
+	max-width: 253px;
+	font-size: 16px;
+}

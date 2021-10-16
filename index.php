@@ -39,19 +39,26 @@ if ($url == "/?signup") {
 
 	<div class="bluer_bg dn animate__animated"></div>
 	<div class="signup tac dn animate__animated">
-		<div class="close pointer">
-			<img onclick="close_sup()" src="img/close.svg">
+		<div class="signer ">
+			<div class="close pointer">
+				<img onclick="close_sup()" src="img/close.svg">
+			</div>
+			<h1 class="tac mt-3 mb-5">Create account</h1>
+			<input class="mb-3" type="text" placeholder="login"><br>
+			<input class="mb-3" type="text" placeholder="mail"><br>
+			<input class="mb-3" type="text" placeholder="password"><br>
+			<input class="mb-5" type="text" placeholder="accept password"><br>
+			<div class="checker-sup">
+				<div>I agree with <a href="#">Privacy Policy</a>, <a href="#">Cookie Policy</a> and <a href="#">Terms of Use</a>.</div>
+				<input class="checkbox" type="checkbox">
+			</div>
+			<div class="link mt-3">Create account</div>
 		</div>
-		<h1 class="tac mt-3 mb-5">Create account</h1>
-		<input class="mb-3" type="text" placeholder="login"><br>
-		<input class="mb-3" type="text" placeholder="mail"><br>
-		<input class="mb-3" type="text" placeholder="password"><br>
-		<input class="mb-5" type="text" placeholder="accept password"><br>
-		<div class="checker-sup">
-			<div>I agree with <a href="#">Privacy Policy</a>, <a href="#">Cookie Policy</a> and <a href="#">Terms of Use</a>.</div>
-			<input class="checkbox" type="checkbox">
+		<div class="signedup dn">
+			<img src="img/good.svg">
+			<p class="mt-5 mb-3">The account has been successfully created, you just have to check your mail to confirm that it is yours.</p>
+			<div class="link">Log in</div>
 		</div>
-		<div class="link mt-3">Create account</div>
 	</div>
 
 	<?php include('includes/footer.php') ?>	
