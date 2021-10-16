@@ -1,0 +1,116 @@
+*{
+	box-sizing: border-box;
+	font-family: Roboto;
+}
+.container{
+	max-width: 900px;
+}
+.mini-container{
+	max-width: 640px;
+}
+.bluer_bg{
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.3;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+input{
+	height: 44px;
+	background: #FFFFFF;
+	border: 1px solid #9E9E9E;
+	border-radius: 6px;
+	padding-left: 15px;
+}
+h1{
+	font-size: 24px;
+	font-weight: 300;
+}
+.link{
+	font-size: 12px;
+	text-decoration-line: underline;
+	color: #EDBC02;
+	cursor: pointer;
+}
+/*signIn/signUp*/
+body.welcome{
+	background: #FFFCEA;
+}
+.signin{
+	max-width: 320px;
+	padding: 15px;
+	margin: 0 auto;
+}
+body.welcome  .langpicker{
+	max-width: 150px;
+}
+body.welcome .w-lang{
+	padding: 16.5px 19px;
+	font-size: 18px;
+	background: #606060;
+	max-width: 60px;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: 0.5s;
+	color: #fff;
+}
+body.welcome .w-lang:hover,body.welcome  .langpicker .active {
+	box-shadow: 0px 0px 5px 1px #EDBC02;
+	transition: 0.5s;
+}
+body.welcome input{
+	width: 290px;
+}
+body.welcome .log-next{
+	top: 7px;
+	right: 15px;
+	cursor: pointer;
+}
+body.welcome .log-input .log-next img{
+	width: 30px;
+	height: 30px;
+}
+
+
+/*ss*/
+.pass-input{
+	position: relative;
+	z-index: -1;
+	top: -44px;
+	border-radius: 6px;
+}
+/*ss*/
+.pass-input-anim{
+	animation-name: pass-input-anim;
+	animation-duration: 0.5s;
+	animation-fill-mode: forwards;
+}
+@keyframes pass-input-anim{
+	0%{
+		top: -44px;
+	}		
+	100%{
+		top: -1px;
+		z-index: 1;		
+	}
+}
+
+
+.signup{
+	padding: 15px;
+	background: #fff;
+	margin: 0 auto;
+	position: absolute;
+	z-index: 11;
+	border-radius: 6px;
+}
+.checkbox{
+	height: 20px;
+}
+.checker-sup div{
+	max-width: 290px;
+	margin: 0 auto;
+}
