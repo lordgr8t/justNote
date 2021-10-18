@@ -1,7 +1,22 @@
+@media (max-width: 659px) {
+	.case, .case:nth-child(odd){
+		margin: 0 auto;
+	}
+	.case:nth-child(even) {
+		float: none;
+		margin-right: 0
+	}
+}
+@media (max-width: 613px) {
+	.case-grid {
+		margin: 0 auto;
+		width: 290px;
+	}
+}
 @media (max-width: 520px) {
 	header .header-menu,
 	header .header-search{
-	display: none;
+		display: none;
 	}
 	header .burger-menu-btn{
 		display: block;

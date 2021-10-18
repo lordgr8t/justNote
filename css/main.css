@@ -4,9 +4,11 @@
 }
 .container{
 	max-width: 900px;
+	background: #E7E7E7;
 }
 .mini-container{
-	max-width: 640px;
+	max-width: 670px;
+	margin: 0 auto;
 }
 .bluer_bg{
 	width: 100%;
@@ -38,6 +40,9 @@ h1{
 a,a:hover{
 	color: #000;
 	text-decoration: none;
+}
+.allbody{
+	background: #F3F3F3;
 }
 /*signIn/signUp*/
 
@@ -194,4 +199,126 @@ header .burger-menu .b-lang{
 header .burger-menu .b-qust,
 header .burger-menu .b-user{
 	text-align: center;
+}
+
+
+/*folders*/
+.case-grid{
+	margin: 0 auto;
+	max-width: 640px;
+}
+.case{
+	width: 290px;
+	height: 49px;
+	border: 1px solid #999999;
+	border-radius: 10px;
+	margin-right: 50px;
+	display: inline-block;
+	cursor: pointer;
+}
+.case:nth-child(even){
+	float: right;
+	margin-right: 0;
+}
+.case .pos-a{
+	left: 10px;
+	top: 7px;
+}
+.case-color{
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;	
+}
+.case-name{
+	margin-left: 20px;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.case-color-red,
+.pick-folder-color-color.red{
+	background: #FF6F6F;
+}
+.case-color-orange,
+.pick-folder-color-color.orange{
+	background: #FCA85A;
+}
+.case-color-yellow,
+.pick-folder-color-color.yellow{
+	background: #F9F0BD;
+}
+.case-color-green,
+.pick-folder-color-color.green{
+	background: #78F985;
+}
+.case-color-cyan,
+.pick-folder-color-color.cyan{
+	background: #4BDDFD;
+}
+.case-color-blue,
+.pick-folder-color-color.blue{
+	background: #4E55FD;
+}
+.case-color-purple,
+.pick-folder-color-color.purple{
+	background: #D361FC;
+}
+.create-popup{
+	padding: 15px;
+	background: #fff;
+	left: calc(50% - 120px);
+	top: calc(50% - 275px);
+	position: absolute;
+	z-index: 11;
+	border-radius: 6px;
+}
+h3{
+	font-weight: 500;
+	font-size: 16px;
+}
+.create-popup .case:nth-child(even){
+	float: none;
+	margin-right: 0;
+}
+.create-popup input{
+	height: 30px;
+}
+.create-popup .case{
+	display: block;
+	margin-bottom: 10px;
+	margin-right: 0;
+	width: 210px;
+	height: 40px;
+}
+.create-popup .case-color{
+	width: 23px;
+	height: 23px;
+}
+.create-menu div{
+	width: 50%;
+	text-align: center;
+	cursor: pointer;
+}
+.create-menu{
+	border-top: solid 1px #999;
+	padding: 12px 0 0 0;
+	margin-top: 20px;
+}
+.create-menu div:nth-child(even){
+	border-left: solid 1px #999;	
+}
+.pick-folder-color-color{
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.delete_case{
+	position: absolute;
+	right: 15px;
+	top: 9px;
+	cursor: pointer;
+}
+.noclick{
+	pointer-events: none;
 }

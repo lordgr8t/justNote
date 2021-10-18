@@ -1,6 +1,10 @@
+
 //vars
 let winW = $(document).width();
 let winH = $(document).height();
+
+//folders
+
 
 // langs
 function en() {

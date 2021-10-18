@@ -6,56 +6,73 @@ $title = " | My folders";
 include('includes/head.php');
 $url = $_SERVER['REQUEST_URI'];
 ?>
-<body class="folders">
+<body class="folders allbody">
 	<?php include('includes/header.php') ?>
 	
-	<header>
-		<div class="d-flex jcsb">
-			<a href="/" class="header-logo d-flex jcsb aic">
-				<img src="img/logo100.png">
-				<div>Just note</div>
-			</a>
-			<div class="header-search pos-r">
-				<input type="text" placeholder="Search">
-				<img src="img/search.svg" class="search-button pos-a">
+	<div class="container pb-5">
+		<div class="mini-container">
+			<div class="mini-menu mini-menu-folders">
+				<div class="d-flex jcsb pt-3 pb-3">
+					<div class="appender">
+						<div onclick="c_note()" class="link m-c-note">Create note</div>
+					</div>
+					<div class="link m-c-folder">Create folder</div>
+					<div class="link m-c-edit">Edit</div>
+				</div>
 			</div>
-			<div class="header-menu">
-				<img src="img/h-lang.svg">
-				<img src="img/h-quest.svg">
-				<img src="img/h-user.svg">				
-			</div>
-			<img onclick="open_b()" class="burger-menu-btn dn" src="img/menu.svg">
 		</div>
-		<div class="burger-menu">
-			<div class="b-logo d-flex aic">
-				<img src="img/logo100.png">
-				<div class="ml-2">Just note</div>
-			</div>
-			<hr>
-			<div class="b-search pos-r">
-				<input type="text" placeholder="Search">
-				<img src="img/search.svg" class="search-button pos-a">
-			</div>
-			<hr>
-			<div class="b-lang d-flex jcsb m0-a">
-				<a href="#" onclick="en()" class="active en">EN</a>
-				<a href="#" onclick="ru()" class=" ru">RU</a>
-			</div>
-			<hr>
-			<div class="b-qust">
-				<a href="#">Take a qustion</a>
-			</div>
-			<hr>
-			<div class="b-user">
-				<a href="#">User</a>
-			</div>
-			<hr>
-			<div class="tac">
-				<img onclick="close_b()" src="img/close.svg">
-			</div>
-			<hr>
+
+		<div class="case-grid">					
+			<?php include('test.php') ?>
 		</div>
-	</header>
+	</div>
+
+	<div class="bluer_bg"></div>
+
+	<div class="create-popup create-note">
+		<h3 class="tac">Create new note</h3>
+		<input class="mt-3 mb-3" type="text" placeholder="name">
+		<h3 class="mb-3">Place in:</h3>
+		<?php include('test.php') ?>
+		<div class="create-menu d-flex jcsb">
+			<div class="cancel">Cancel</div>
+			<div class="ok">Ok</div>
+		</div>
+	</div>
+
+	<div class="create-popup create-folder">
+		<h3 class="tac">Create new folder</h3>
+		<input class="mt-3 mb-3" type="text" placeholder="name">
+		<h3 class="mb-3">Color:</h3>
+		<div class="pick-folder-color d-flex jcsb">
+			<div class="pick-folder-color-color red"></div>
+			<div class="pick-folder-color-color orange"></div>
+			<div class="pick-folder-color-color yellow"></div>
+			<div class="pick-folder-color-color green"></div>
+			<div class="pick-folder-color-color cyan"></div>
+			<div class="pick-folder-color-color blue"></div>
+			<div class="pick-folder-color-color purple"></div>
+		</div>
+		<div class="create-menu d-flex jcsb">
+			<div class="cancel">Cancel</div>
+			<div class="ok">Ok</div>
+		</div>
+	</div>
+
+	<div class="create-popup accept-delete dn">
+		<h3 class="tac">Delete "f_name"?</h3>	
+		<div class="create-menu d-flex jcsb">
+			<div class="cancel">No</div>
+			<div class="ok">Yes</div>
+		</div>
+	</div>
+
+
+
+
+
+	<div class="folder-edit dn"></div>
+
 
 	<?php include('includes/footer.php') ?>	
 	<?php include('includes/script.php') ?>
