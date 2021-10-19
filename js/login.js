@@ -1,5 +1,4 @@
-let winH = $(document).height();
-let winW = $(document).width();
+
 let signIH = $('.signin').height();
 let signUH = $('.signup').height();
 let signUW = $('.signup').width();

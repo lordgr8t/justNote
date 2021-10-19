@@ -322,3 +322,81 @@ h3{
 .noclick{
 	pointer-events: none;
 }
+
+/*editor*/
+.back_fix{
+	width: 114px;
+}
+.editor .mini-menu h3{
+	font-size: 16px;
+	font-weight: 300;
+}
+.work-space{
+	min-height: 250px;
+	width: 100%;
+	background: #fff;
+	border-radius: 6px;
+	padding: 26px 20px;
+}
+.work-space textarea{
+	width: 100%;
+	height: 100%;
+	min-height: 250px;
+	overflow:hidden;
+	transition: 0.5s;
+	border: none;
+}
+.tools{
+	height: 50px;
+	border-radius: 4px;
+	background: #fff;
+	padding-top: 13px;
+	position: absolute;
+	z-index: 10;
+	bottom: 0;
+	border: 1px solid #F6DD80;
+}
+.tools img{
+	cursor: pointer;
+	width: 21px;
+	height: 21px;
+}
+
+.tools .aligment,
+.tools .headlines,
+.tools .textTransform,
+.tools .lists{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+.tools .aligment{
+	width: 157px;
+	padding: 0 20px 0 30px;
+}
+.tools .headlines{
+	width: 137px;
+}
+.tools .textTransform{
+	width: 153px;
+}
+.tools .lists{
+	width: 86px;
+}
+.line_90{
+	height: 25px;
+	background: #EDBC02;
+	width: 1px;
+}
+.tools-controller{
+	position: relative;	
+	transition: 0.5s;
+	display: none;
+	top: 75px;
+    left: 6px;
+}
+.t-c-up{
+	transform: rotate(180deg);
+	top: 56px;
+	right: -8px;
+}

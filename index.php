@@ -36,7 +36,7 @@ if ($url == "/?signup") {
 		<div class="noacc link tac mt-3" onclick="open_sup()">Not have  an  accaunt?</div>
 	</div>
 
-	<div class="bluer_bg dn animate__animated"></div>
+	<div onclick="close_sup()" class="bluer_bg dn animate__animated"></div>
 	<div class="signup tac dn animate__animated">
 		<div class="signer ">
 			<div class="close pointer">
